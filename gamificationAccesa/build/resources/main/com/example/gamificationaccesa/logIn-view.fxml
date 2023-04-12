@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.gamificationaccesa.controller.LogInController"
+            prefHeight="400.0" prefWidth="600.0">
+    <FlowPane maxHeight="-Infinity"
+              maxWidth="-Infinity"
+              minHeight="-Infinity"
+              minWidth="-Infinity"
+              prefHeight="100.0" prefWidth="499.0" prefWrapLength="450.0"
+              BorderPane.alignment="CENTER">
+        <children>
+        </children>
+    </FlowPane>
+    <FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+              prefHeight="100.0" prefWidth="499.0" prefWrapLength="450.0" BorderPane.alignment="CENTER">
+        <children>
+
+        </children>
+    </FlowPane>
+    <VBox alignment="CENTER" prefHeight="450" prefWidth="550" spacing="20.0">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+
+        <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                  minWidth="-Infinity" prefHeight="86.0" prefWidth="435.0"
+                  BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="256.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="320.0" minWidth="10.0" prefWidth="254.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="76.00000610351563" minHeight="10.0" prefHeight="44.799993896484374"
+                                vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="59.19998779296874" minHeight="9.599993896484364"
+                                prefHeight="40.80000610351562" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <TextField fx:id="fieldLogInEmail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                           minWidth="-Infinity" prefHeight="26.0" prefWidth="151.0" GridPane.columnIndex="1"
+                           GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                </TextField>
+                <PasswordField fx:id="fieldLogInPassword" maxHeight="-Infinity" maxWidth="-Infinity"
+                               minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="151.0"
+                               GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                               GridPane.valignment="CENTER"/>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="81.0" text="EMAIL"
+                       textAlignment="CENTER" textFill="#182d2c" textOverrun="CENTER_ELLIPSIS"
+                       GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                </Label>
+                <Label text="PASSWORD" textFill="#182d2c" GridPane.halignment="CENTER" GridPane.rowIndex="1"
+                       GridPane.valignment="CENTER">
+                </Label>
+            </children>
+        </GridPane>
+        <Button fx:id="buttonLogIn" onAction="#onLogInButtonClick" text="Log In">
+        </Button>
+        <Button fx:id="buttonSignUp" onAction="#onSignUpButtonClick" text="Sign Up">
+        </Button>
+        <Label fx:id="logIn">
+        </Label>
+    </VBox>
+</AnchorPane>
+
